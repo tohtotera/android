@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tohtotera.ab.auonenet.jp.sensor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/android"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AccelerometerDemo" android:label="Accelerometer Demo" />
+        <activity android:name=".MagneticFieldDemo" android:label="Magnetic Field Demo" />
+        <activity android:name=".OrientationDemo" android:label="Orientation Demo" />
+        <activity android:name=".TemperatureDemo" android:label="Temperature Demo" />
+    </application>
+
+</manifest>

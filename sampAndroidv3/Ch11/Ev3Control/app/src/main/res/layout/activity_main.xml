@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/layout">
+
+    <TextView android:text="@string/touch_button" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/motorACon"
+        android:id="@+id/motorACon"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/motorACback"
+        android:id="@+id/motorACback"
+        android:layout_below="@+id/motorACon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/motorACoff"
+        android:id="@+id/motorACoff"
+        android:layout_below="@+id/motorACback"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rotatebydegree"
+        android:id="@+id/rotatebydegree"
+        android:layout_below="@+id/motorACoff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rotatebytime"
+        android:id="@+id/rotatebytime"
+        android:layout_below="@+id/rotatebydegree"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/motorAon"
+        android:id="@+id/motorAon"
+        android:layout_below="@+id/rotatebytime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/motorAoff"
+        android:id="@+id/motorAoff"
+        android:layout_below="@+id/motorAon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/motorCon"
+        android:id="@+id/motorCon"
+        android:layout_below="@+id/rotatebytime"
+        android:layout_toRightOf="@+id/motorAon"
+        android:layout_toEndOf="@+id/motorAon" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/motorCoff"
+        android:id="@+id/motorCoff"
+        android:layout_below="@+id/motorCon"
+        android:layout_toRightOf="@+id/motorAoff"
+        android:layout_toEndOf="@+id/motorAoff" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/speed"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/motorACon"
+        android:layout_toRightOf="@+id/motorCoff"
+        android:layout_toEndOf="@+id/motorCoff" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speedPicker"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/motorACon"
+        android:layout_toEndOf="@+id/motorACon" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/degreePicker"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/speedPicker"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/degree"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/speedPicker"
+        android:layout_toEndOf="@+id/speedPicker" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/degreePicker" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/degreePicker"
+        android:layout_alignLeft="@+id/timePicker"
+        android:layout_alignStart="@+id/timePicker" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/readColorSensor"
+        android:id="@+id/readColorSensor"
+        android:layout_below="@+id/motorAoff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/readTouchSensor"
+        android:id="@+id/readTouchSensor"
+        android:layout_below="@+id/readColorSensor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/readUltrasonicSensor"
+        android:id="@+id/readUltrasonicSensor"
+        android:layout_below="@+id/readTouchSensor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textColor"
+        android:layout_alignBaseline="@+id/readColorSensor"
+        android:layout_toRightOf="@+id/readTouchSensor"
+        android:layout_toEndOf="@+id/readTouchSensor" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textTouch"
+        android:layout_alignBaseline="@+id/readTouchSensor"
+        android:layout_toRightOf="@+id/readColorSensor"
+        android:layout_toEndOf="@+id/readColorSensor" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textUSonic"
+        android:layout_alignBaseline="@+id/readUltrasonicSensor"
+        android:layout_toRightOf="@+id/readUltrasonicSensor"
+        android:layout_toEndOf="@+id/readUltrasonicSensor" />
+</RelativeLayout>

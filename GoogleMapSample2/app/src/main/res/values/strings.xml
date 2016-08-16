@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GoogleMapSample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello Android Maps</string>
+    <string name="use_layout">Use Layout</string>
+    <string name="zoom">Zoom</string>
+    <string name="controller">Controller Sample</string>
+    <string name="tracking">Tracking</string>
+    <string name="landmarks">Landmarks</string>
+    <string name="settings">Settings</string>
+    <string name="overlay">Overlay Sample</string>
+    <string name="map_key">AIzaSyDtETVpFgC2isBw4379sMKBHOL1b7GghL4</string>
+</resources>

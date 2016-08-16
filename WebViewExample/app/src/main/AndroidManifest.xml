@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tohtotera.ab.auonenet.jp.webviewexample">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Example01"/>
+        <activity android:name="Example02"/>
+        <activity android:name="Example03"/>
+        <activity android:name="Example04"/>
+        <activity android:name="Example05"/>
+        <activity android:name="Example06"/>
+        <activity android:name="Example07"/>
+    </application>
+    <uses-sdk android:minSdkVersion="3"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+</manifest>

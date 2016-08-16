@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IntentCaster</string>
+    <string name="button_label">Submit</string>
+</resources>

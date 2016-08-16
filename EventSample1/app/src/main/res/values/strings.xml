@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EventSample1</string>
+    <string name="hello">Hello World, EventSample1Activity!</string>
+</resources>

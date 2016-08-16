@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ContactSample</string>
+    <string name="hello">Hello ContactSampleActivity</string>
+</resources>

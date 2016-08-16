@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ActivitySample2</string>
+    <string name="hello">Hello World ActivitySample2Activity!</string>
+    <string-array name="list_name">
+        <item>ビール</item>
+        <item>日本酒</item>
+        <item>ワイン</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <!-- darker variant for the status bar and Contextual app bbars -->
+        <item name="android:colorPrimaryDark">@color/indigo_dark</item>
+        <!--  yor app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/indigo</item>
+    </style>
+</resources>
